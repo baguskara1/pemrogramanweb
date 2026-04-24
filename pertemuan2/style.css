@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin: 20px;
+    background-color: #FF9A86;
+}
+nav {
+    margin-bottom: 30px;
+}
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #FFF0BE;
+}
+h2 {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+h3 {
+    color: #FFF0BE;
+    margin-top: 0;
+    font-weight: bold;
+}
+h4 {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.container {
+    display: flex;
+    gap: 40px;
+}
+.kiri {
+    flex: 1;
+}
+.kanan {
+    flex: 1;
+}
+.kotak {
+    border: 2px solid #ddd;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+.daftar-vertikal {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.slider-lagu {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding-bottom: 15px;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    margin-top: 15px;
+}
+p {
+    max-width: 600px;
+    line-height: 1.5;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FFF0BE;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.about-me {
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+}
+.item-lagu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+.info-lagu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    flex-shrink: 0;
+}
+.item-lagu img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.item-lagu p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.item-hobi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    flex-shrink: 0;
+}
+.item-hobi img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.item-hobi p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.pemutar-musik {
+    flex: 1;
+    min-width: 250px;
+}
+.pemutar-musik iframe {
+    border-radius: 12px;
+}
+.pemutar-video {
+    flex: 1;
+    min-width: 250px;
+}
+.pemutar-video iframe {
+    border-radius: 12px;
+}
