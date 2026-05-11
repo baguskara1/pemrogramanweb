@@ -160,3 +160,37 @@ body {
     text-align: center;
     margin-top: 40px;
 }
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: rgba(0, 0, 128, 0.95);
+        padding: 20px 0;
+        text-align: center;
+        border-radius: 0 0 15px 15px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+}

@@ -7,29 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">ELEVEN</div>
-        <ul class="nav-links">
-            <li><a href="#"class="active">Beranda</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="profile.html">Profil</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-            <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
-            <li><a href="daftar.html">Daftar Online</a></li>
-        </ul>
-        <div class="search-box">
-            <input type="text" id="kolom-pencarian" list="saran-menu" placeholder="Cari...">
-            <datalist id="saran-menu">
-                <option value="Beranda">
-                <option value="Media">
-                <option value="Profil">
-                <option value="Kontak">
-                <option value="Ekstrakurikuler">
-                <option value="Daftar Online">
-    </datalist>
+<nav class="navbar">
+    <div class="logo">ELEVEN</div>
+    <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
     </div>
-</div>
-    </nav>
+
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="profile.html">Profil</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+        <li><a href="daftar.html">Daftar Online</a></li>
+    </ul>
+
+    <div class="search-box">
+        <input type="text" id="kolom-pencarian" list="saran-menu" placeholder="Cari...">
+        <datalist id="saran-menu">
+            <option value="Beranda">
+            <option value="Media">
+            <option value="Profil">
+            <option value="Kontak">
+            <option value="Ekstrakurikuler">
+            <option value="Daftar Online">
+        </datalist>
+    </div>
+</nav>
 
     <header class="hero">
         <div class="slides">
