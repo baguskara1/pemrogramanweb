@@ -50,3 +50,31 @@ function ubahSlide(arah) {
 }
 
 window.onload = perbaruiTampilan;s
+
+document.addEventListener('DOMContentLoaded', () => {
+    const inputCari = document.querySelector('.search-box input')
+    
+    if (inputCari) {
+        inputCari.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                e.preventDefault()
+                const kataKunci = inputCari.value.toLowerCase().trim()
+                
+                const daftarHalaman = {
+                    'beranda': 'index.html',
+                    'media': 'media.html',
+                    'profil': 'profile.html',
+                    'kontak': 'kontak.html',
+                    'ekstrakurikuler': 'ekstrakurikuler.html',
+                    'daftar online': 'daftar.html'
+                }
+
+                if (daftarHalaman[kataKunci]) {
+                    window.location.href = daftarHalaman[kataKunci]
+                } else {
+                    alert('Halaman tidak ditemukan. Silakan pilih saran yang tersedia.')
+                }
+            }
+        })
+    }
+})
