@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMA Negeri 11 Yogyakarta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">ELEVEN</div>
+        <ul class="nav-links">
+            <li><a href="#"class="active">Beranda</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="profile.html">Profil</a></li>
+            <li><a href="#">Kontak</a></li>
+            <li><a href="#">Ekstrakurikuler</a></li>
+            <li><a href="#">Daftar Online</a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" placeholder="Cari...">
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="slides">
+            <div class="slide active" style="background-image: url('https://assets.pikiran-rakyat.com/crop/0x0:0x0/1200x675/photo/2024/05/21/1816489670.jpg')"></div>
+            <div class="slide" style="background-image: url('https://scontent.fjog9-1.fna.fbcdn.net/v/t39.30808-6/471773025_915559387349114_6307456730488230002_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=105&ccb=1-7&_nc_sid=2a1932&_nc_ohc=hh2vuVTcS9EQ7kNvwHGZIpR&_nc_oc=AdoL-lJ3oJVB2RQdLEVmy_zoYt-9UBTciTMiFLfBHvdpnMbQO5mxzQubSEdxE-ybrsw&_nc_zt=23&_nc_ht=scontent.fjog9-1.fna&_nc_gid=ki7BVfeRNZBRPwOCJqBkSA&_nc_ss=7b289&oh=00_Af5RpKLpRr3O0uKq-kxFnO2I0Klr6KtEaHUqa-cvEhqdlA&oe=6A064435')"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="animate-up">SMA NEGERI 11 YOGYAKARTA</h1>
+            <p>Mencetak Generasi Unggul dan Berbudaya</p>
+        </div>
+    </header>
+
+    <section class="stats">
+        <div class="stat-box">
+            <div class="icon">👨‍🎓</div>
+            <h3>4679</h3>
+            <p>Siswa Aktif</p>
+        </div>
+        <div class="stat-box">
+            <div class="icon">👨‍🏫</div>
+            <h3>57</h3>
+            <p>Guru</p>
+        </div>
+        <div class="stat-box">
+            <div class="icon">🏢</div>
+            <h3>12</h3>
+            <p>Staf</p>
+        </div>
+        <div class="stat-box">
+            <div class="icon">🎭</div>
+            <h3>10</h3>
+            <p>Ekstrakurikuler</p>
+        </div>
+    </section>
+
+    <section class="informasi-sekolah">
+    <div class="pengumuman">
+        <h2>Pengumuman Terbaru</h2>
+        <div class="kartu-info">
+            <div class="tanggal-info">12 Juni 2026</div>
+            <h3>Pendaftaran Peserta Didik Baru 2026</h3>
+            <p>Pendaftaran gelombang pertama dibuka secara online melalui portal resmi.</p>
+            <a href="#">Baca selengkapnya</a>
+        </div>
+        <div class="kartu-info">
+            <div class="tanggal-info">08 Mei 2026</div>
+            <h3>Hasil Kelulusan Siswa Kelas XII</h3>
+            <p>Pengumuman kelulusan dapat diakses menggunakan nomor induk siswa.</p>
+            <a href="#">Baca selengkapnya</a>
+        </div>
+    </div>
+    <div class="agenda">
+        <h2>Agenda Terdekat</h2>
+        <div class="daftar-agenda">
+            <div class="item-agenda">
+                <div class="tanggal-kotak">15<br>Mei</div>
+                <div class="detail-agenda">
+                    <h4>Ujian Akhir Semester</h4>
+                    <p>Pelaksanaan UAS genap tahun ajaran berjalan</p>
+                </div>
+            </div>
+            <div class="item-agenda">
+                <div class="tanggal-kotak">20<br>Mei</div>
+                <div class="detail-agenda">
+                    <h4>Class Meeting</h4>
+                    <p>Lomba olahraga dan seni antar kelas</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="galeri-sekolah">
+    <h2>Galeri Kegiatan SMAN 11 Yogyakarta</h2>
+    
+    <div class="carousel-container">
+        <button class="tombol-geser kiri" onclick="ubahSlide(-1)">&#10094;</button>
+        
+        <div class="area-slide">
+            <a id="tautan-slider" href="https://blog.sman11yogya.sch.id/kegiatan-1" target="_blank">
+                <img id="gambar-slider" src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800" alt="Galeri Sekolah">
+            </a>
+            <div id="keterangan-slider" class="teks-keterangan">Memuat keterangan foto...</div>
+        </div>
+        
+        <button class="tombol-geser kanan" onclick="ubahSlide(1)">&#10095;</button>
+    </div>
+</section>
+        <footer class="footer">
+        <p>&copy; 2026 SMA Negeri 11 Yogyakarta. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

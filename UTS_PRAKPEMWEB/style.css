@@ -1,0 +1,316 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: rgba(0, 0, 128, 0.85);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #FFD700;
+    transform: scale(1.1);
+}
+
+.search-box input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+.search-box input {
+    padding: 6px 10px;
+    border-radius: 15px;
+    border: none;
+}
+.hero {
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.slides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+.slide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+.slide.active {
+    opacity: 1;
+}
+.hero-content {
+    position: relative;
+    color: white;
+    z-index: 10;
+}
+.animate-up {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    animation: slideInUp 3s infinite;
+}
+@keyframes slideInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 20;
+    padding: 0 20px;
+}
+.stat-box {
+    background: white;
+    padding: 30px;
+    width: 220px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.stat-box:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+.stat-box .icon {
+    font-size: 2.5rem;
+}
+.stat-box h3 {
+    font-size: 2.2rem;
+    color: #8b0000;
+    margin: 10px 0;
+}
+.stat-box p {
+    color: #666;
+    font-weight: bold;
+}
+
+.informasi-sekolah {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 60px 5%;
+    background-color: #f4f4f4;
+    margin-top: 40px;
+}
+.pengumuman {
+    width: 60%;
+}
+.agenda {
+    width: 35%;
+}
+.pengumuman h2, .agenda h2 {
+    color: rgba(0, 0, 128, 0.85);
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(0, 0, 128, 0.85);
+    padding-bottom: 10px;
+    font-size: 1.8rem;
+}
+.kartu-info {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.tanggal-info {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+.kartu-info h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+.kartu-info p {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+.kartu-info a {
+    color: rgba(0, 0, 128, 0.85);
+    text-decoration: none;
+    font-weight: bold;
+}
+.daftar-agenda {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.item-agenda {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+.tanggal-kotak {
+    background: rgba(0, 0, 128, 0.85);
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    min-width: 60px;
+    line-height: 1.2;
+}
+.detail-agenda h4 {
+    margin: 0 0 5px 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+.detail-agenda p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+.galeri-sekolah {
+    padding: 50px 5%;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    background-color: #ffffff;
+}
+
+.galeri-sekolah h2 {
+    color: rgba(0, 0, 128, 0.85);
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.area-slide img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.area-slide img:hover {
+    transform: scale(1.02);
+}
+
+.teks-keterangan {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 500;
+}
+
+.tombol-geser {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 128, 0.85);
+    color: white;
+    border: none;
+    padding: 15px 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 22px;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.tombol-geser:hover {
+    background-color: rgba(0, 0, 128, 0.85);
+}
+
+.kiri { left: -25px; }
+.kanan { right: -25px; }
+
+.news-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.news-card .date {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.news-card h4 {
+    margin: 5px 0;
+    color: #333;
+}
+
+.footer {
+    padding: 30px;
+    text-align: center;
+    background: rgba(0, 0, 128, 0.85);
+    color: white;
+    margin-top: 50px;
+}
