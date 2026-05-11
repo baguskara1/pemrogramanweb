@@ -8,9 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f1f5f9;
     color: #334155;
-    line-height: 1.6;
 }
-
 .navbar-container {
     display: flex;
     justify-content: center;
@@ -20,7 +18,6 @@ body {
     top: 0;
     z-index: 1000;
 }
-
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -31,38 +28,29 @@ body {
     border-radius: 60px;
     width: 90%;
     color: white;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
-
 .nav-links {
     display: flex;
     list-style: none;
     gap: 20px;
 }
-
 .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: 0.3s;
 }
-
-.nav-links a:hover, .nav-links a.active {
+.nav-links a.active {
     color: #FFD700;
-    transform: scale(1.1);
-    display: inline-block;
 }
-
 .search-box input {
     padding: 8px 15px;
     border-radius: 20px;
     border: none;
-    outline: none;
 }
 
-.profil-banner {
-    height: 350px;
-    background-image: url('https://images.unsplash.com/photo-1541339907198-e08756ebafe3?q=80&w=1200');
+.kontak-banner {
+    height: 300px;
+    background-image: url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -70,102 +58,105 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 0;
     text-align: center;
 }
-
 .banner-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 128, 0.85);
+    background: rgba(0, 0, 128, 0.75);
 }
-
-.profil-banner h1, .profil-banner p {
+.kontak-banner h1, .kontak-banner p {
     position: relative;
     z-index: 10;
-}
-
-.profil-banner h1 {
-    color: #FFD700;
-    font-size: 4rem;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-}
-
-.profil-banner p {
     color: white;
-    font-size: 1.2rem;
+}
+.kontak-banner h1 {
+    color: #FFD700;
+    font-size: 3.5rem;
+    margin-bottom: 10px;
 }
 
-.profil-container {
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 0 5%;
+.kontak-wrapper {
+    display: flex;
+    padding: 60px 5%;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.kontak-info {
+    flex: 1;
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
-
-.card {
-    background: white;
-    border-radius: 20px;
-    padding: 40px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-    border-left: 5px solid #FFD700;
-    transition: transform 0.3s;
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card-image {
-    flex: 0 0 350px;
-}
-
-.card-image img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.card-content {
+.kontak-form {
     flex: 1;
 }
-
-.card-content h2 {
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.card h2 {
     color: #000080;
+    margin-bottom: 20px;
+    border-left: 5px solid #FFD700;
+    padding-left: 15px;
+}
+.card p {
+    margin-bottom: 10px;
+}
+
+.social-media {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+.form-group {
     margin-bottom: 20px;
 }
 
-.card-content p {
-    margin-bottom: 15px;
-    text-align: justify;
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
 }
 
-.misi-list {
-    padding-left: 20px;
-    margin-top: 10px;
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
 }
 
-.misi-list li {
-    margin-bottom: 10px;
+.btn-kirim {
+    width: 100%;
+    padding: 15px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-kirim:hover {
+    background-color: #0000cc;
+    transform: translateY(-3px);
 }
 
 .footer {
     background: #000080;
     color: white;
-    padding: 30px 0;
+    padding: 30px;
     text-align: center;
     margin-top: 40px;
 }

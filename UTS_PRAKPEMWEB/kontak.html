@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - SMAN 11 Yogyakarta</title>
+    <link rel="stylesheet" href="style-kontak.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar-container">
+            <div class="navbar">
+                <div class="logo">ELEVEN</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="profile.html">Profil</a></li>
+                    <li><a href="kontak.html" class="active">Kontak</a></li>
+                    <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+                    <li><a href="#">Daftar Online</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" placeholder="Cari...">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="kontak-banner">
+            <div class="banner-overlay"></div>
+            <h1>KONTAK KAMI</h1>
+            <p>Hubungi kami untuk informasi lebih lanjut mengenai SMAN 11 Yogyakarta.</p>
+        </section>
+
+        <section class="kontak-wrapper">
+            <div class="kontak-info">
+                <div class="card">
+                    <h2>Informasi Sekolah</h2>
+                    <p><strong>Alamat:</strong> Jl. A.M. Sangaji No.50, Cokrodiningratan, Kec. Jetis, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55233</p>
+                    <p><strong>Telepon:</strong> (0274) 565898</p>
+                    <p><strong>Email:</strong> info@sman11yogya.sch.id</p>
+                    
+                    <div class="social-media">
+                        <h3>Media Sosial</h3>
+                        <p>Instagram: @sman11yogyakarta</p>
+                        <p>YouTube: SMAN 11 Yogyakarta Official</p>
+                    </div>
+                </div>
+
+                <div class="card map-card">
+                    <h2>Lokasi Kami</h2>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.1198781190465!2d110.36536607575012!3d-7.777111677159073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5837e8e7e9a3%3A0xb1ec7bd26428c2f2!2sSMA%20Negeri%2011%20Yogyakarta!5e0!3m2!1sid!2sid!4v1778468568411!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="kontak-form">
+                <div class="card">
+                    <h2>Kirim Pesan</h2>
+                    <form id="formKontak">
+                        <div class="form-group">
+                            <label for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama" placeholder="Masukkan nama Anda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Masukkan email aktif" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subjek">Subjek</label>
+                            <input type="text" id="subjek" placeholder="Tujuan pesan" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan">Pesan</label>
+                            <textarea id="pesan" rows="5" placeholder="Tuliskan pesan Anda di sini" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-kirim">Kirim Sekarang</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 SMA Negeri 11 Yogyakarta. Berkarakter Kuat Berprestasi Hebat.</p>
+    </footer>
+
+    <script src="script-kontak.js"></script>
+</body>
+</html>

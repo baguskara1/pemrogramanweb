@@ -11,19 +11,19 @@ setInterval(nextSlide, 4000)
 
 const dataGaleri = [
     {
-        gambar: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800",
+        gambar: "https://i.ytimg.com/vi/1tF_jUEIOIc/maxresdefault.jpg",
         tautan: "https://blog.sman11yogya.sch.id/kegiatan-belajar",
-        keterangan: "Kegiatan belajar mengajar siswa di dalam kelas"
+        keterangan: "Kegiatan Simulasi Bencana Gempa Bumi"
     },
     {
-        gambar: "https://images.unsplash.com/photo-1529390079861-591de354faf5?q=80&w=800",
+        gambar: "https://assets.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/124/2023/09/01/01Hirno-Rar5JPG-3137078686.jpg",
         tautan: "https://blog.sman11yogya.sch.id/fasilitas-sekolah",
-        keterangan: "Fasilitas perpustakaan lengkap untuk mendukung literasi"
+        keterangan: "Pawai Kebangsaan Anniversary Negeri Sebelas"
     },
     {
-        gambar: "https://images.unsplash.com/photo-1546410531-ee4cb12b489d?q=80&w=800",
+        gambar: "https://lazismuumbulharjo.org/wp-content/uploads/2022/01/InkedIMG-20211217-WA0012_LI.jpg",
         tautan: "https://blog.sman11yogya.sch.id/ekstrakurikuler",
-        keterangan: "Latihan rutin tim basket SMAN 11 Yogyakarta"
+        keterangan: "Donasi Bencana Dari SMAN 11 Yogyakarta"
     }
 ];
 

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Online - SMAN 11 Yogyakarta</title>
+    <link rel="stylesheet" href="style-daftar.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar-container">
+            <div class="navbar">
+                <div class="logo">ELEVEN</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                    <li><a href="ekstrakurikuler.html">Ekstrakurikuler</a></li>
+                    <li><a href="daftar.html" class="active">Daftar Online</a></li>
+                </ul>
+                <div class="search-box">
+                    <input type="text" placeholder="Cari...">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="daftar-banner">
+            <div class="banner-overlay"></div>
+            <h1>PENDAFTARAN ONLINE</h1>
+            <p>Penerimaan Peserta Didik Baru (PPDB) Tahun Ajaran 2026/2027</p>
+        </section>
+
+        <section class="info-ppdb">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="card info-card">
+                        <h2>Jadwal & Jalur</h2>
+                        <p>Gelombang 1: 01 - 15 Juni 2026</p>
+                        <p>Gelombang 2: 20 - 30 Juni 2026</p>
+                        <p>Jalur Tersedia:</p>
+                        <ul>
+                            <li>Jalur Zonasi Radius</li>
+                            <li>Jalur Prestasi Akademik</li>
+                            <li>Jalur Afirmasi</li>
+                            <li>Jalur Perpindahan Tugas</li>
+                        </ul>
+                    </div>
+                    <div class="card syarat-card">
+                        <h2>Persyaratan Dokumen</h2>
+                        <ul class="syarat-list">
+                            <li>Scan Kartu Keluarga asli</li>
+                            <li>Scan Akta Kelahiran asli</li>
+                            <li>Scan Ijazah atau Surat Keterangan Lulus</li>
+                            <li>Pas foto terbaru ukuran 3x4</li>
+                            <li>Sertifikat prestasi jalur khusus</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-pendaftaran">
+            <div class="container">
+                <div class="card form-card">
+                    <h2>Formulir Pendaftaran Siswa</h2>
+                    <form id="ppdbForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nama">Nama Lengkap</label>
+                                <input type="text" id="nama" placeholder="Sesuai Ijazah" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nisn">NISN</label>
+                                <input type="text" id="nisn" placeholder="10 Digit Angka" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="sekolah">Asal Sekolah</label>
+                                <input type="text" id="sekolah" placeholder="Nama SMP atau MTs" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="jalur">Pilihan Jalur</label>
+                                <select id="jalur" required>
+                                    <option value="">Pilih Jalur</option>
+                                    <option value="zonasi">Zonasi</option>
+                                    <option value="prestasi">Prestasi</option>
+                                    <option value="afirmasi">Afirmasi</option>
+                                    <option value="perpindahan">Perpindahan Tugas</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="hp">Nomor WhatsApp Aktif</label>
+                            <input type="tel" id="hp" placeholder="Contoh 08123456789" required>
+                        </div>
+                        <button type="submit" class="btn-daftar">Kirim Pendaftaran</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>2026 SMA Negeri 11 Yogyakarta. Berkarakter Kuat Berprestasi Hebat.</p>
+    </footer>
+
+    <script src="script-daftar.js"></script>
+</body>
+</html>
